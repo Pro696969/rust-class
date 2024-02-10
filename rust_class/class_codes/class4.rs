@@ -1,8 +1,10 @@
+
 fn main(){
     ifelse();
     stringmatch();
+    forloop();
+    whileloop();
     loops();
-    scoop();
 }
 
 fn ifelse(){
@@ -30,7 +32,7 @@ fn stringmatch(){
     println!("state name is {}", state);
 }
 
-fn loops(){
+fn forloop(){
     for x in 1..11{  //use 1..=11 to include 11
         if x==5{
             continue;
@@ -39,7 +41,7 @@ fn loops(){
     }
 }
 
-fn scoop(){
+fn whileloop(){
     let mut x = 0;
     while x<10{
         x+=1;
@@ -48,7 +50,14 @@ fn scoop(){
     println!("outside the loop x value is {}", x);
 }
 
-fn scope(){
+fn loops(){
     let mut x = 0;
-
+    loop{
+        x += 1;
+        println!("x = {}", x);
+        if x == 10{
+            break;
+        }
+    }
 }
+
