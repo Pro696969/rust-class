@@ -1,3 +1,4 @@
+//pass by value
 fn main() {
     let no: i32 = 5;
     mutate_no_zero(no);
