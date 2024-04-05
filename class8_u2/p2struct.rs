@@ -17,6 +17,8 @@ fn main() {
     user.is_admin = false;
     println!("{} {} {}",user.id,user.name,user.is_admin);
     //
+    let name:String::from("BoB");
+    ..user
 }
 
 fn get_user(name:String)->User {
